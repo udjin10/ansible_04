@@ -1,3 +1,4 @@
-You can use 'make init' to install roles or "ansible-galaxy role install -f -r requirements.yml --roles-path galaxy_roles"
+You can use 'make init'(need instal make) to install roles or "ansible-galaxy role install -f -r requirements.yml --roles-path galaxy_roles"
 
-ti run playbook: 'ansible-playbook  site.yml --diff '
+to run playbook: 'ansible-playbook  site.yml --diff '
+
