@@ -1,0 +1,10 @@
+---
+
+- name: install bundle(click vector lighthouse)
+  hosts:
+    - clickhouse-01
+  become: true
+  roles:
+    - role: clickhouse
+    - role: vector
+    - role: lighthouse
