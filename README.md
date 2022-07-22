@@ -1,12 +1,25 @@
-You can use 'make init'(need instal make) to install roles or "ansible-galaxy role install -f -r requirements.yml --roles-path galaxy_roles"
+install ansible roles:  
 
-to run playbook: 'ansible-playbook  site.yml --diff '
+- you can use ```make init``` command(need installed make)  
 
-also specify vars in inventory/prod.yml
+OR   
 
-example:
+- ```ansible-galaxy role install -f -r requirements.yml --roles-path galaxy_roles```
 
-ansible_connection: ssh
-ansible_user: udjin
-ansible_ssh_private_key_file: /home/udjin/.ssh/id_ed25519
+they will be downloaded to ```galaxy_roles``` folder and .gitignored
 
+ 
+
+run playbook: ```ansible-playbook  site.yml --diff -K``` and input sudo password
+
+
+also specify your vars in ```inventory/prod.yml```
+
+
+
+
+## example_vars:
+```
+ansible_connection: ssh ---   *connection method to host(default)*
+ansible_user: udjin  ---   *remote user with sudo group*
+ansible_ssh_private_key_file: /home/udjin/.ssh/id_ed25519 --- *ssh private key file path*``` 
