@@ -5,8 +5,6 @@ vector_package_architecture: amd64
 
 vector_deb_package: "https://packages.timber.io/vector/{{ vector_version }}/vector_{{ vector_version }}-1_{{ vector_package_architecture }}.deb"
 
-vector_force_reinstall: false
-
 
 vector_bin_path: "/usr/bin"
 vector_dirs_paths:
