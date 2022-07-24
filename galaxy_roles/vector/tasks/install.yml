@@ -34,4 +34,12 @@
 - name: VECTOR | Download package
   apt:
     deb: "{{ vector_deb_package }}"
-  when: vector_version not in vector_check
+  when: vector_version not in vector_check and ansible_distribution == "Ubuntu"
+
+- name: Vector | Install package for CentOS
+  become: true
+  ansible.builtin.yum:
+    name: "{{ vector_rpm_package }}"
+    state: present
+    disable_gpg_check: true
+  when: vector_version not in vector_check and ansible_distribution == "CentOS" 

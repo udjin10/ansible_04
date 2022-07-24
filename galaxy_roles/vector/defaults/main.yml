@@ -1,9 +1,9 @@
 ---
 
 vector_version: 0.22.3
-vector_package_architecture: amd64
 
-vector_deb_package: "https://packages.timber.io/vector/{{ vector_version }}/vector_{{ vector_version }}-1_{{ vector_package_architecture }}.deb"
+vector_rpm_package: https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-1.x86_64.rpm
+vector_deb_package: https://packages.timber.io/vector/{{ vector_version }}/vector_{{ vector_version }}-1_amd64.deb
 
 
 vector_bin_path: "/usr/bin"

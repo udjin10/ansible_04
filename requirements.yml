@@ -7,7 +7,7 @@ roles:
 
   - src: git@github.com:udjin10/vector-role.git
     scm: git
-    version: "1.0.2"
+    version: "1.0.4"
     name: vector
 
   - src: git@github.com:udjin10/lighthouse_role.git
