@@ -1,4 +1,5 @@
 ---
+
 roles:
   - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
     scm: git
